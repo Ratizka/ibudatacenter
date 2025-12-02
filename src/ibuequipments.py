@@ -1,3 +1,4 @@
+import os
 import sys
 import requests
 import pandas as pd
@@ -18,7 +19,7 @@ def datan_kasittely(data):
         normalisointi = pd.json_normalize(data["Equipment"])
         normalisointi["IBUId"] = data["IBUId"]
         normalisointi["FullName"] = data["FullName"]
-        return (normalisointi)
+        return normalisointi
     except (UnboundLocalError):
         print("Muuttujaan viitataan ennen asettamista")
 
@@ -26,8 +27,7 @@ def datan_kasittely(data):
 def tallenna_csv(data, polku):
     try:
         taulukko = pd.DataFrame(data)
-        taulukko.to_csv("c:/Users/Lenovo/Documents/" +
-                        polku + ".csv", index=False)
+        taulukko.to_csv(f"{os.getcwd()}/data/{polku}.csv", index=False)
         print('CSV-tiedosto luotu onnistuneesti')
     except (FileNotFoundError, PermissionError, ValueError) as e:
         print(f"Virhe CSV:n tallentamisessa: {e}")
@@ -42,8 +42,7 @@ def pelaaja_prosessi(pelaaja_id):
 
 
 def main():
-    df = pd.read_csv(
-        "c:/Users/Lenovo/Documents/ibumiehet.csv")
+    df = pd.read_csv(f"{os.getcwd()}/data/ibuid.csv")
 
     all_data = []
 
@@ -61,4 +60,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-    print("Tietojen kerääminen valmistui.")

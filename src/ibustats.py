@@ -1,5 +1,5 @@
-import sys
 import requests
+import os
 import pandas as pd
 from tqdm import tqdm
 
@@ -19,24 +19,30 @@ def datan_kasittely(data_json):
                 "etunimi": data_json["GivenName"],
                 "sukunimi": data_json["FamilyName"],
                 "nimi": data_json["FullName"],
+                "syntymaaika": data_json['Birthdate'],
+                "maa": data_json['NAT'],
                 "ampuminen": data_json["StatShooting"][0],
                 "makuu": data_json["StatShootingProne"][0],
                 "pysty": data_json["StatShootingStanding"][0],
                 "hiihtokm": data_json["StatSkiKMB"][0]}
-        return (data)
+        return data
     except (UnboundLocalError):
         print("Muuttujaan viitataan ennen asettamista")
 
 
 def tallenna_csv(data, polku):
     try:
+        data['ampuminen'] = data['ampuminen'].str.replace(
+            "%", "")
+        data['pysty'] = data['pysty'].str.replace("%", "")
+        data['makuu'] = data['makuu'].str.replace("%", "")
+        data['syntymaaika'] = pd.to_datetime(data['syntymaaika']).dt.strftime(
+            "%Y-%m-%d")
         taulukko = pd.DataFrame(data)
-        taulukko.to_csv("c:/Users/Lenovo/Documents/" +
-                        polku + ".csv", index=False)
+        taulukko.to_csv(f"{os.getcwd()}/data/{polku}.csv", index=False)
         print('CSV-tiedosto luotu onnistuneesti')
     except (FileNotFoundError, PermissionError, ValueError) as e:
         print(f"Virhe CSV:n tallentamisessa: {e}")
-        sys.exit(1)
 
 
 def pelaaja_prosessi(pelaaja_id):
@@ -47,8 +53,7 @@ def pelaaja_prosessi(pelaaja_id):
 
 
 def main():
-    df = pd.read_csv(
-        "c:/Users/Lenovo/Documents/ibumiehet.csv")
+    df = pd.read_csv(f"{os.getcwd()}/data/ibuid.csv")
 
     all_data = []
 
@@ -59,11 +64,10 @@ def main():
         player_data = pelaaja_prosessi(player_id)
         all_data.append(player_data)
 
-    combined_df = pd.json_normalize(all_data)
+    data = pd.json_normalize(all_data)
 
-    tallenna_csv(combined_df, "ibumiehettilastot")
+    tallenna_csv(data, "ibumiehettilastot")
 
 
 if __name__ == '__main__':
     main()
-    print("Tietojen kerääminen valmistui.")
