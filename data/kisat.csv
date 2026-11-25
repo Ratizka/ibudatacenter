@@ -1,0 +1,12 @@
+SeasonId,Trimester,EventId,StartDate,EndDate,FirstCompetitionDate,Description,EventSeriesNr,ShortDescription,Altitude,OrganizerId,Organizer,OrganizerColor,Nat,NatLong,MedalSetId,EventClassificationId,Level,UTCOffset,IsActual,IsCurrent,EventStatusId,EventStatus,Notes
+2627,1,BT2627SWRLCP01,2026-11-23T12:00:00Z,2026-11-29T12:00:00Z,2026-11-26T15:15:00Z,LaVita IBU World Cup Biathlon,1,Kontiolahti,124,KON,Kontiolahti,#ed6827,FIN,Finland,,BTSWRLCP,1,2,True,True,0,,
+2627,1,BT2627SWRLCP02,2026-11-30T12:00:00Z,2026-12-06T12:00:00Z,2026-12-04T10:25:00Z,LaVita IBU World Cup Biathlon,2,Hochfilzen,1010,HOC,Hochfilzen,#E6302D,AUT,Austria,,BTSWRLCP,1,1,False,False,0,,
+2627,1,BT2627SWRLCP03,2026-12-07T12:00:00Z,2026-12-13T12:00:00Z,2026-12-10T13:15:00Z,LaVita IBU World Cup Biathlon,3,Le Grand Bornand,928,ANN,Le Grand Bornand,#d88330,FRA,France,,BTSWRLCP,1,1,False,False,0,,
+2627,2,BT2627SWRLCP04,2026-12-31T12:00:00Z,2027-01-03T12:00:00Z,2027-01-02T10:25:00Z,LaVita IBU World Cup Biathlon,4,Pokljuka,1340,POK,Pokljuka,#99bc13,SLO,Slovenia,,BTSWRLCP,1,1,False,False,0,,
+2627,2,BT2627SWRLCP05,2027-01-04T12:00:00Z,2027-01-10T12:00:00Z,2027-01-06T13:15:00Z,LaVita IBU World Cup Biathlon,5,Ruhpolding,710,RUH,Ruhpolding,#006db1,GER,Germany,,BTSWRLCP,1,1,False,False,0,,
+2627,2,BT2627SWRLCP06,2027-01-11T12:00:00Z,2027-01-17T12:00:00Z,2027-01-14T13:15:00Z,LaVita IBU World Cup Biathlon,6,Antholz-Anterselva,1634,ANT,Antholz-Anterselva,#009CD9,ITA,Italy,,BTSWRLCP,1,1,False,False,0,,
+2627,2,BT2627SWRLCP07,2027-01-18T12:00:00Z,2027-01-24T12:00:00Z,2027-01-21T15:30:00Z,LaVita IBU World Cup Biathlon,7,Nove Mesto na Morave,625,NMS,Nove Mesto na Morave,#007396,CZE,Czechia,,BTSWRLCP,1,1,False,False,0,,
+2627,3,BT2627SWRLCH__,2027-02-07T12:00:00Z,2027-02-21T12:00:00Z,2027-02-10T15:10:00Z,LaVita IBU World Championships Biathlon,,Otepaa,149,OTE,Otepaa,#3db3de,EST,Estonia,,BTSWRLCH,1,2,False,False,0,,
+2627,3,BT2627SWRLCP08,2027-03-01T12:00:00Z,2027-03-07T12:00:00Z,2027-03-04T13:45:00Z,LaVita IBU World Cup Biathlon,8,Oberhof,814,OBE,Oberhof,#009CD9,GER,Germany,,BTSWRLCP,1,1,False,False,0,,
+2627,3,BT2627SWRLCP09,2027-03-08T12:00:00Z,2027-03-14T12:00:00Z,2027-03-11T15:10:00Z,LaVita IBU World Cup Biathlon,9,Oestersund,363,OST,Oestersund,006ab5,SWE,Sweden,,BTSWRLCP,1,1,False,False,0,,
+2627,3,BT2627SWRLCP10,2027-03-15T12:00:00Z,2027-03-21T12:00:00Z,2027-03-18T15:30:00Z,LaVita IBU World Cup Biathlon,10,Oslo Holmenkollen,320,OSL,Oslo Holmenkollen,#00a7e7,NOR,Norway,,BTSWRLCP,1,1,False,False,0,,

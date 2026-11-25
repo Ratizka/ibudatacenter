@@ -1,0 +1,11 @@
+SeasonId,Trimester,EventId,StartDate,EndDate,FirstCompetitionDate,Description,EventSeriesNr,ShortDescription,Altitude,OrganizerId,Organizer,OrganizerColor,Nat,NatLong,MedalSetId,EventClassificationId,Level,UTCOffset,IsActual,IsCurrent,EventStatusId,EventStatus,Notes
+2526,1,BT2526SWRLCP01,2025-11-29T12:00:00Z,2025-12-07T12:00:00Z,2025-11-29T12:15:00Z,BMW IBU World Cup Biathlon,1 ,Oestersund,363,OST,Oestersund,006ab5,SWE,Sweden,,BTSWRLCP,1,1,False,False,0,,
+2526,1,BT2526SWRLCP02,2025-12-08T12:00:00Z,2025-12-14T12:00:00Z,2025-12-12T10:25:00Z,BMW IBU World Cup Biathlon,2 ,Hochfilzen,1010,HOC,Hochfilzen,#E6302D,AUT,Austria,,BTSWRLCP,1,1,False,False,0,,
+2526,1,BT2526SWRLCP03,2025-12-15T12:00:00Z,2025-12-21T12:00:00Z,2025-12-18T13:15:00Z,BMW IBU World Cup Biathlon,3 ,Annecy-Le Grand Bornand,928,ANN,Annecy-Le Grand Bornand,#d88330,FRA,France,,BTSWRLCP,1,1,False,False,0,,
+2526,2,BT2526SWRLCP04,2026-01-05T12:00:00Z,2026-01-11T12:00:00Z,2026-01-08T10:30:00Z,BMW IBU World Cup Biathlon,4 ,Oberhof,814,OBE,Oberhof,#009CD9,GER,Germany,,BTSWRLCP,1,1,False,False,0,,
+2526,2,BT2526SWRLCP05,2026-01-12T12:00:00Z,2026-01-18T12:00:00Z,2026-01-14T13:30:00Z,BMW IBU World Cup Biathlon,5 ,Ruhpolding,710,RUH,Ruhpolding,#006db1,GER,Germany,,BTSWRLCP,1,1,False,False,0,,
+2526,2,BT2526SWRLCP06,2026-01-19T12:00:00Z,2026-01-25T12:00:00Z,2026-01-22T17:15:00Z,BMW IBU World Cup Biathlon,6 ,Nove Mesto na Morave,625,NMS,Nove Mesto na Morave,#007396,CZE,Czechia,,BTSWRLCP,1,1,False,False,0,,
+2526,3,BT2526SWRLOG__,2026-02-06T12:00:00Z,2026-02-22T12:00:00Z,2026-02-08T13:05:00Z,Olympic Winter Games,  ,Antholz-Anterselva,1634,ANT,Antholz-Anterselva,#009CD9,ITA,Italy,BT2526SWRLOG__,BTSWRLOG,1,1,False,False,0,,
+2526,3,BT2526SWRLCP07,2026-03-02T12:00:00Z,2026-03-08T12:00:00Z,2026-03-05T16:05:00Z,BMW IBU World Cup Biathlon,7 ,Kontiolahti,124,KON,Kontiolahti,#ed6827,FIN,Finland,,BTSWRLCP,1,2,False,False,0,,
+2526,3,BT2526SWRLCP08,2026-03-09T12:00:00Z,2026-03-15T12:00:00Z,2026-03-12T14:15:00Z,BMW IBU World Cup Biathlon,8 ,Otepaa,149,OTE,Otepaa,#3db3de,EST,Estonia,,BTSWRLCP,1,2,False,False,0,,
+2526,3,BT2526SWRLCP09,2026-03-16T12:00:00Z,2026-03-22T12:00:00Z,2026-03-19T15:15:00Z,BMW IBU World Cup Biathlon,9 ,Oslo Holmenkollen,320,OSL,Oslo Holmenkollen,#00a7e7,NOR,Norway,,BTSWRLCP,1,1,False,False,0,,
